@@ -1,6 +1,6 @@
-PhoneGap-Start
+PhoneGap-Start for Vaadin projects
 ---
 
-A starting point for PhoneGap apps.
+A starting point for PhoneGap apps that wrap Vaadin app.
 
-To get started: fork this repo, modify the config.xml to match your details, and get building!
+To get started: fork this repo, modify the config.xml and index.html to match your details, and get building!

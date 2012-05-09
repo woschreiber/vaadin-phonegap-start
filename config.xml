@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.phonegap.getting.started"
+	id		= "com.vaadin.phonegap.getting.started"
 	version 	= "1.0.0">
 
-	<name>PhoneGap: Getting Started</name>
+	<name>PhoneGap with Vaadin: Getting Started</name>
 
 	<description>
-		A template for getting started with PhoneGap development and build.phonegap.com
+		A template for getting started with PhoneGap wrapped Vaadin app and build.phonegap.com
 	</description>
 
-	<author href="http://alunny.github.com"
-		email="andrew.lunny@nitobi.com">
-		Andrew Lunny
+	<author href="http://mstahv.github.com"
+		email="matti@vaadin.com">
+		Matti Tahvonen
 	</author>
 
 	<icon src="icon.png" gap:role="default" />
 
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
+	
+	<!-- These rules lets demo.vaadin.com take over the web view created by cordova/phonegap -->
+	<access origin="http://demo.vaadin.com" />
+	<access origin="http://openstreetmap.org" subdomains="true" />
+	<preference name="stay-in-webview" value="true" />
 
-	<preference name="orientation" value="portrait" />
 </widget>
