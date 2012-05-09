@@ -4,7 +4,7 @@
 	id		= "com.vaadin.phonegap.getting.started"
 	version 	= "1.0.0">
 
-	<name>PhoneGap with Vaadin: Getting Started</name>
+	<name>PhoneGap packaged Vaadin app</name>
 
 	<description>
 		A template for getting started with PhoneGap wrapped Vaadin app and build.phonegap.com
@@ -21,8 +21,9 @@
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	
 	<!-- These rules lets demo.vaadin.com take over the web view created by cordova/phonegap -->
-	<access origin="http://demo.vaadin.com" />
-	<access origin="http://openstreetmap.org" subdomains="true" />
 	<preference name="stay-in-webview" value="true" />
+	<access origin="http://demo.vaadin.com" />
+	<!-- Vornitologist uses openstreetmap data as background map so we'll whitelist that as well -->
+	<access origin="http://openstreetmap.org" subdomains="true" />
 
 </widget>
